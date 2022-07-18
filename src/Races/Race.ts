@@ -2,8 +2,6 @@ abstract class Race {
   private _name:string;
   private _dexterity:number;
 
-  abstract get maxLifePoints(): number;
-
   constructor(nome: string, destreza: number) {
     this._name = nome;
     this._dexterity = destreza;
@@ -20,6 +18,8 @@ abstract class Race {
   get dexterity(): number {
     return this._dexterity;
   }
+
+  abstract get maxLifePoints(): number;
 }
 
 export default Race;
